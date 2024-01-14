@@ -1,0 +1,107 @@
+:root {
+  --button-color: #e3467f;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+ button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.625em 1.5em; 
+  border-radius: 2.5625rem; 
+  border: none;
+  background-color: var(--button-color);
+  color: white;
+}
+
+
+/* nav */
+
+nav,
+nav ul,
+nav li {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  margin: 3rem 2rem 0rem;
+}
+
+ul {
+  list-style-type: none;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+nav li {
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.cart a,
+.search a {
+  padding: 0.75rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cart a {
+  background-image: url("./images/shopping-cart.png");
+}
+
+.search a {
+  background-image: url("./images/search.png");
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav a {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+nav a,
+nav a:visited,
+nav a:active {
+  color: black;
+}
+
+/* banner */
+
+.banner h1 {
+  font-size: 3.25rem;
+  font-weight: 700;
+}
+
+.banner p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.banner button::after {
+    height: 1rem;
+    width: 1rem;
+    padding: 1rem;
+    background-image: url('./images/arrow-forward\ 1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
